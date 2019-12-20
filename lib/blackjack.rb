@@ -6,7 +6,7 @@ puts "Welcome to the Blackjack Table"
 end
 
 def deal_card (card)
-     if card.each {|n| n*20} do 
+     card.each {|n| n*20}
       card> 0
       card < 12
   end 
