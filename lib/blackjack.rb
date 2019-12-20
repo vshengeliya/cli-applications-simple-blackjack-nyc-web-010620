@@ -41,6 +41,7 @@ def hit?
     nil
   else
     puts "Please enter a valid command"
+  end 
 end
 
 def invalid_command
