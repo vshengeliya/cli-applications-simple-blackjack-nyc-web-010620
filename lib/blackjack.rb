@@ -33,7 +33,10 @@ def initial_round
 end
 
 def hit?
-  # code hit? here
+  card_total
+  
+  else
+    puts "Please enter a valid command"
 end
 
 # def invalid_command
