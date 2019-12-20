@@ -28,7 +28,7 @@ end
 def initial_round (deal_card)
  for i in range(2): deal_card
  end
-  puts "#{sum(card_total)}"
+  puts "#{sum(deal_card}"
 end
 
 
