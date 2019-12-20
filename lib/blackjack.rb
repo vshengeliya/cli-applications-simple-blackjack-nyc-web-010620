@@ -37,16 +37,16 @@ def invalid_command
 end
 
 def hit?
-   get_user_input (prompt_user, get_user_input)
-   display_card_total 
-  if prompt_user =="h"
-    deal_card
-    elsif prompt_user =="s"
-    nil
+
+  # Alternative solution - this solution calls hit? recursively if given an invalid command
+  if user_input == "h"
+    card_total += deal_card
+  elsif user_input == "s"
+    card_total
   else
-    puts invalid_command
-  end 
-end
+    invalid_command
+    hit?(card_total)
+  end
 
 # #####################################################
 # # get every test to pass before coding runner below #
