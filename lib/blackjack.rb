@@ -3,6 +3,7 @@
 
 def welcome
   expect($stdout).to receive(:puts).with("Welcome to the Blackjack Table")
+end
 puts "Welcome to the Blackjack Table")
 end
 
