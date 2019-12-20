@@ -37,8 +37,6 @@ def invalid_command
 end
 
 def hit?
-
-  # Alternative solution - this solution calls hit? recursively if given an invalid command
   if user_input == "h"
     card_total += deal_card
   elsif user_input == "s"
