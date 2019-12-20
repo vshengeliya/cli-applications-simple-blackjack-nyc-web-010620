@@ -6,7 +6,10 @@ puts "Welcome to the Blackjack Table"
 end
 
 def deal_card (card)
-  
+     card.each {|n| n*20} do 
+      card = deal_card
+      expect(card).to be > 0
+      expect(card).to be < 12
   
 end
 
