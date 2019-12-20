@@ -25,10 +25,11 @@ def end_game (card_total)
   puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
-def initial_round
-  deal_card
+def initial_round (deal_card)
+ for i in range(2): deal_card
   puts "#{sum(card_total)}"
 end
+
 
 # def hit?
 #   # code hit? here
