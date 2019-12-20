@@ -57,7 +57,12 @@ def hit?(card_total)
 # #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round
+  hit?
+  display_card_total
+  
+  end_game
 end
     
 end 
