@@ -36,7 +36,8 @@ def hit?
    get_user_input
    display_card_total 
   if prompt_user =="h"
-    
+    deal_card
+    elsif prompt_user =="s"
   else
     puts "Please enter a valid command"
 end
