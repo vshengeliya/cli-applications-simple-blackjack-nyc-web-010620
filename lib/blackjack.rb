@@ -6,9 +6,7 @@ puts "Welcome to the Blackjack Table"
 end
 
 def deal_card (card)
-     card.each {|n| n*20}
-      card> 0
-      card < 12
+     20.times.map{card.rand(1...11)}
   end 
 end
 
