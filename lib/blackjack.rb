@@ -32,6 +32,10 @@ def initial_round
   return first_round
 end
 
+def invalid_command
+  puts "Please enter a valid command"
+end
+
 def hit?
    get_user_input
    display_card_total 
@@ -40,12 +44,8 @@ def hit?
     elsif prompt_user =="s"
     nil
   else
-    puts "Please enter a valid command"
+    puts invalid_command
   end 
-end
-
-def invalid_command
-  puts "Please enter a valid command"
 end
 
 # #####################################################
