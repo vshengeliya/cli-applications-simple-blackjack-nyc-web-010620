@@ -37,7 +37,7 @@ def invalid_command
 end
 
 def hit?
-   get_user_input
+   get_user_input (prompt_user, get_user_input)
    display_card_total 
   if prompt_user =="h"
     deal_card
