@@ -27,7 +27,7 @@ end
 
 def initial_round
   deal_card
-  
+  puts "#{sum(card_total)}"
 end
 
 # def hit?
