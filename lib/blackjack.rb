@@ -38,6 +38,7 @@ def hit?
   if prompt_user =="h"
     deal_card
     elsif prompt_user =="s"
+    nil
   else
     puts "Please enter a valid command"
 end
