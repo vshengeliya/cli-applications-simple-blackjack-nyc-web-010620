@@ -26,7 +26,7 @@ def end_game (card_total)
 end
 
 def initial_round (deal_card)
- for i in range(2): deal_card
+  while i=1 do deal_card
  end
   puts "#{sum(deal_card}"
 end
