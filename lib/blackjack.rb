@@ -35,6 +35,7 @@ end
 def hit?
   card_total
   
+  
   else
     puts "Please enter a valid command"
 end
