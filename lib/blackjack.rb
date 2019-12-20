@@ -3,7 +3,7 @@
 
 def welcome
   expect($stdout).to receive(:puts).with("Welcome to the Blackjack Table")
-
+puts
 end
 
 def deal_card
