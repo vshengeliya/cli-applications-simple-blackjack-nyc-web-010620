@@ -1,3 +1,5 @@
+expect($stdout).to receive(:puts).with("Welcome to the Blackjack Table")
+
 def welcome
   puts "Welcome to the Blackjack Table"
 end
