@@ -36,7 +36,7 @@ def invalid_command
   puts "Please enter a valid command"
 end
 
-def hit?
+def hit?(card_total)
   if user_input == "h"
     card_total += deal_card
   elsif user_input == "s"
