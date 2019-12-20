@@ -33,10 +33,10 @@ def initial_round
 end
 
 def hit?
-  card_total
-  prompt_user
-  
-  
+  card_total 
+  if prompt_user =="h"
+  else deal_card
+  get_user_input
   else
     puts "Please enter a valid command"
 end
