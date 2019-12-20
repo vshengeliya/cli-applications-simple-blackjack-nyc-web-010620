@@ -42,26 +42,26 @@ def hit?(card_total)
   prompt_user
   user_input = get_user_input
 
-  until valid_inputs.include?(user_input)
-    invalid_command
-    prompt_user
-    user_input = get_user_input
-  end
+  # until valid_inputs.include?(user_input)
+  #   invalid_command
+  #   prompt_user
+  #   user_input = get_user_input
+  # end
 
-  if user_input == "h"
-    card_total += deal_card
-  end
-  card_total
-  
-  ## Alternative solution - this solution calls hit? recursively if given an invalid command
   # if user_input == "h"
   #   card_total += deal_card
-  # elsif user_input == "s"
-  #   card_total
-  # else
-  #   invalid_command
-  #   hit?(card_total)
   # end
+  # card_total
+  
+  ## Alternative solution - this solution calls hit? recursively if given an invalid command
+  if user_input == "h"
+    card_total += deal_card
+  elsif user_input == "s"
+    card_total
+  else
+    invalid_command
+    hit?(card_total)
+  end
   
 end
 
