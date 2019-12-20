@@ -37,19 +37,33 @@ def invalid_command
 end
 
 def hit?(card_total)
-  
-   valid_inputs = ["h", "s"]
+  valid_inputs = ["h", "s"]
 
   prompt_user
   user_input = get_user_input
-  
+
+  until valid_inputs.include?(user_input)
+    invalid_command
+    prompt_user
+    user_input = get_user_input
+  end
+
   if user_input == "h"
     card_total += deal_card
-  elsif user_input == "s"
-    card_total
-  else
-    invalid_command
   end
+  card_total
+  
+  ## Alternative solution - this solution calls hit? recursively if given an invalid command
+  # if user_input == "h"
+  #   card_total += deal_card
+  # elsif user_input == "s"
+  #   card_total
+  # else
+  #   invalid_command
+  #   hit?(card_total)
+  # end
+  
+end
 
 # #####################################################
 # # get every test to pass before coding runner below #
