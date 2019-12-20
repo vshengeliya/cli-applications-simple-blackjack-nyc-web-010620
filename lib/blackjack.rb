@@ -32,9 +32,9 @@ def initial_round
   return first_round
 end
 
-# def hit?
-#   # code hit? here
-# end
+def hit?
+  # code hit? here
+end
 
 # def invalid_command
 #   # code invalid_command here
