@@ -8,6 +8,7 @@ end
 def deal_card (card)
      20.times.map{card.rand(1...11)}
   end 
+  deal_card
 end
 
 # def display_card_total
