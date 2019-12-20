@@ -33,11 +33,10 @@ def initial_round
 end
 
 def hit?
-  card_total 
    get_user_input
+   display_card_total 
   if prompt_user =="h"
-  else 
- 
+    
   else
     puts "Please enter a valid command"
 end
